@@ -1,0 +1,95 @@
+:root {
+  --color-primary: #8854fe; }
+
+@font-face {
+  font-family: "Neris Black Italic";
+  src: url("../fonts/neris.black-italic.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Black";
+  src: url("../fonts/neris.black.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Bold Italic";
+  src: url("../fonts/neris.bold-italic.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Semibold Italic";
+  src: url("../fonts/neris.semibold-italic.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Semibold";
+  src: url("../fonts/neris.semibold.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Light Italic";
+  src: url("../fonts/neris.light-italic.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Light";
+  src: url("../fonts/neris.light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Thin Italic";
+  src: url("../fonts/neris.thin-italic.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neris Thin";
+  src: url("../fonts/neris.thin.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Neris Light"; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 16px; }
+
+body {
+  overflow-x: hidden; }
+
+.app {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh; }
+  .app__sidebar {
+    width: 8%;
+    height: 95vh;
+    position: fixed;
+    z-index: 100;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(124, 124, 124, 0.5);
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%); }
+  .app__main {
+    position: relative;
+    width: 90%;
+    min-height: 100vh;
+    left: 10%;
+    padding: 2rem;
+    box-sizing: border-box; }

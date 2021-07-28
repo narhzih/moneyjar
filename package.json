@@ -1,0 +1,20 @@
+{
+  "name": "moneyjar",
+  "version": "1.0.0",
+  "description": "A web application for managing all your online money affairs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run serve --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Olawale Omosekeji",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3"
+  }
+}
