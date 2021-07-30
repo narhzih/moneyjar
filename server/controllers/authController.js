@@ -129,3 +129,13 @@ exports.resetPassword = async (req, res, next) => {
     return next(err);
   }
 };
+
+exports.me = async (req, res) => {
+  res.status(201).json({
+    status: "success",
+    message: "Looking good so far",
+    data: {
+      user: req.user,
+    },
+  });
+};
