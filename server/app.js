@@ -14,8 +14,8 @@ app.get("/", (req, res) => {
 });
 app.use("/api", userRoutes);
 
-app.all("*", (req, res, next) => {
-  next(new AppError(`Can't find ${req.originalUrl} on this server`));
+app.get("*", (req, res, next) => {
+  return next(new AppError(`Can't find ${req.originalUrl} on this server`));
 });
 
 app.use(globalErrorHandler);

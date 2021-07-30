@@ -1,4 +1,5 @@
 const sendErrorDev = (err, req, res) => {
+  console.error("ERROR 💥", err);
   return res.status(err.statusCode).json({
     status: err.status,
     error: err,

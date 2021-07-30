@@ -12,9 +12,13 @@
   "author": "Olawale Omosekeji",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "concurrently": "^6.2.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.13.3"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.6.0"
   }
 }
