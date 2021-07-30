@@ -41,4 +41,13 @@ exports.protect = async (req, res, next) => {
     return next(err);
   }
 };
-exports.resetricTo = (...roles) => {};
+exports.resetricTo = (...roles) => {
+  return (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      return next(
+        new AppError("You do not have enough rights to access this route", 401)
+      );
+    }
+    next();
+  };
+};
