@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const globalErrorHandler = require("./utils/errors/globalErrorHandler");
 const AppError = require("./utils/errors/appError");
-const userRoutes = require("./routes/userRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 app.use(express.json());
 
@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     message: "Hitting all possible routes",
   });
 });
-app.use("/api", userRoutes);
+app.use("/api/auth", authRoutes);
 
 app.get("*", (req, res, next) => {
   return next(new AppError(`Can't find ${req.originalUrl} on this server`));
